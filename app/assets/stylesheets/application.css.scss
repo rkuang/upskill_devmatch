@@ -41,7 +41,12 @@ h1, h2, h3 {
 
 // Navbar Style
 .navbar { 
-    border: none
+    border: none;
+    min-height: 55px;
+}
+
+.navbar-brand {
+    font-size: 2em;
 }
 
 .navbar-default .navbar-brand,
