@@ -42,11 +42,10 @@ h1, h2, h3 {
 // Navbar Style
 .navbar { 
     border: none;
-    min-height: 55px;
 }
 
 .navbar-brand {
-    font-size: 2em;
+    font-size: 1.75em;
 }
 
 .navbar-default .navbar-brand,
@@ -58,4 +57,17 @@ h1, h2, h3 {
     }
 }
 
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
 
+.navbar-default .navbar-toggle {
+    border: 1px solid white;
+    &:hover, &:focus {
+        background-color: #e96443;
+    }
+}
+
+.navbar-collapse {
+    border: 0;
+}
