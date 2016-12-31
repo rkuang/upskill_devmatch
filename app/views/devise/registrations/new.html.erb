@@ -1,6 +1,12 @@
 <div class="container">
   <div class="row">
-    <h3 class="text-center">Sign Up</h2>
+    <% if params[:plan] == '2' %>
+      <h1 class='text-center'>Pro Account</h1>
+      <p class='text-center'>Sign up for the pro account for $10/month and get access to the community and contact information!</p>
+    <% else %>
+      <h1 class="text-center">Basic Account</h1>
+      <p class='text-center'>Sign up for free and get basic access to the community.</p>
+    <% end %>
     <div class="col-md-4 col-md-offset-4">
       <div class="well">
         
