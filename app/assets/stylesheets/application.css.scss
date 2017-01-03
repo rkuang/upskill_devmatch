@@ -40,8 +40,25 @@ h1, h2, h3 {
     color: white;
 }
 
-.alert-notice {
-    display: none;
+.flash-container {
+    position: absolute;
+    width: 100%;
+}
+
+.alert {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.alert-notice, .alert-alert {
+    background: rgba(0, 0, 0, 0.40);
+    margin-top: -15px;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+}
+
+.alert-success, .alert-danger {
+    opacity: .95;
 }
 
 .home-signup-links {
