@@ -5,7 +5,7 @@ $(document).on('turbolinks:load',function(){
       the_button = $('#form-submit-btn');
   
   // Set Stripe public key
-  Stripe.setPublishableKey( $('meta["stripe-key"]').attr('content') );
+  Stripe.setPublishableKey( $('meta[name="stripe-key"]').attr('content') );
   
   // When user clicks form submit button, prevent default submission behavior
   the_button.click(function(){
@@ -32,7 +32,7 @@ $(document).on('turbolinks:load',function(){
       the_button.val("Sign Up").prop('disabled', false);
     } else {
       // Send card info to Stripe
-      Stripe.createToken({number: card_number,
+      Stripe.card.createToken({number: card_number,
                           cvc: card_code,
                           exp_month: card_month,
                           exp_year: card_year},
